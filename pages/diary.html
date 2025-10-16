@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Дневник</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Имя Студента</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Главная</a>
+                <a href="projects.html" class="nav-link">Проекты</a>
+                <a href="diary.html" class="nav-link active">Дневник</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Мой учебный прогресс</h1>
+        </div>
+    </section>
+
+    <section class="diary">
+        <div class="container">
+            <div class="diary-content">
+                <div class="progress-timeline">
+                    <h2>Прогресс обучения</h2>
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-date">15 дек</div>
+                            <div class="timeline-content">
+                                <h3>Верстка макета сайта</h3>
+                                <p class="entry-description">Изучил семантическую верстку, Flexbox и Grid layout</p>
+                                <span class="status completed">✓ Выполнено</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item completed">
+                            <div class="timeline-date">10 дек</div>
+                            <div class="timeline-content">
+                                <h3>JavaScript основы</h3>
+                                <p class="entry-description">Освоил переменные, функции, циклы и работу с DOM</p>
+                                <span class="status completed">✓ Выполнено</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item pending">
+                            <div class="timeline-date">05 дек</div>
+                            <div class="timeline-content">
+                                <h3>Работа с формами</h3>
+                                <p class="entry-description">Изучаю валидацию форм и обработку пользовательского ввода</p>
+                                <span class="status pending">✗ В процессе</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item pending">
+                            <div class="timeline-date">01 дек</div>
+                            <div class="timeline-content">
+                                <h3>Адаптивный дизайн</h3>
+                                <p class="entry-description">Осваиваю медиа-запросы и мобильную верстку</p>
+                                <span class="status pending">✗ В процессе</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="current-courses">
+                    <h2>Текущие курсы</h2>
+                    <div class="courses-grid">
+                        <div class="course-item">
+                            <div class="course-info">
+                                <span class="course-name">Веб-разработка</span>
+                                <span class="course-percent">90%</span>
+                            </div>
+                            <div class="course-bar">
+                                <div class="course-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-info">
+                                <span class="course-name">JavaScript</span>
+                                <span class="course-percent">70%</span>
+                            </div>
+                            <div class="course-bar">
+                                <div class="course-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-info">
+                                <span class="course-name">React</span>
+                                <span class="course-percent">50%</span>
+                            </div>
+                            <div class="course-bar">
+                                <div class="course-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" id="add-entry-btn">
+                        <i class="fas fa-plus"></i>
+                        Добавить запись
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Контакты</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/modal.js"></script>
+</body>
+</html>

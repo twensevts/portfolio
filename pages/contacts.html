@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Контакты</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Екатерина</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Главная</a>
+                <a href="projects.html" class="nav-link">Проекты</a>
+                <a href="diary.html" class="nav-link">Дневник</a>
+                <a href="contacts.html" class="nav-link active">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Свяжитесь со мной</h1>
+            <p>Готова к сотрудничеству и новым проектам</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-content">
+                <div class="contact-form-section">
+                    <h2>Контактная форма</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email адрес *</label>
+                            <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" placeholder="Опишите ваш проект или задайте вопрос..." rows="6" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>Мои контакты</h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:student@edu.ru">helpme@edu.ru</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/username" target="_blank">https://github.com/twensevts</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Telegram</h3>
+                                <a href="https://t.me/username" target="_blank">@TwenSevTS</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Местоположение</h3>
+                                <span>Россия, Москва</span>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="location-map">
+                            <h3>Местоположение</h3>
+                            <div class="static-map">
+                                <img src="https://static-maps.yandex.ru/1.x/?ll=37.481567,55.6708798&z=13&l=map&pt=37.481567,55.670879,pm2rdm&size=600,300" 
+                                    alt="Карта Москвы" 
+                                    onerror="this.style.display='none'; document.getElementById('map-fallback').style.display='block';">
+                                <div id="map-fallback" class="map-placeholder" style="display: none;">
+                                    <i class="fas fa-map"></i>
+                                    <p>Статичная карта местоположения</p>
+                                    <small>Москва, Россия</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Контакты</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Проекты</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Имя Студента</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Главная</a>
+                <a href="projects.html" class="nav-link active">Проекты</a>
+                <a href="diary.html" class="nav-link">Дневник</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Мои проекты</h1>
+        </div>
+    </section>
+
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="html">HTML</button>
+                <button class="filter-btn" data-filter="js">JS</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-full">
+        <div class="container">
+            <div class="projects-grid-full">
+                <div class="project-card-full" data-category="python" data-modal="modal-1">
+                    <h3>Приложение для управления валютами</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <p>Банковское десктопное приложение</p>
+                    <div class="project-click-hint">Нажмите для подробностей</div>
+                </div>
+
+                <div class="project-card-full" data-category="js" data-modal="modal-2">
+                    <h3>Сайт с фотографиями капибар</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                    <p>Много фотографий капибар. И одно видео :3</p>
+                    <div class="project-click-hint">Нажмите для подробностей</div>
+                </div>
+
+                <div class="project-card-full" data-category="js" data-modal="modal-3">
+                    <h3>Интернет-магазин</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <p>Полнофункциональный интернет-магазин</p>
+                    <div class="project-click-hint">Нажмите для подробностей</div>
+                </div>
+
+                <div class="project-card-full" data-category="html" data-modal="modal-4">
+                    <h3>Портфолио (в процессе)</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                    <p>Современное портфолио с адаптивным дизайном</p>
+                    <div class="project-click-hint">Нажмите для подробностей</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Приложение для управления валютами</h2>
+            <div class="modal-images">
+                <img src="../images/project1.jpg" alt="Приложение для управления валютами" onerror="this.style.display='none'">
+            </div>
+            <div class="modal-description">
+                <p><strong>Полное описание:</strong> Банковское десктопное приложение для управления валютами и конвертации.</p>
+                <p><strong>Технологии:</strong> Python, Tkinter, CSS</p>
+                <p><strong>Особенности:</strong> Графический интерфейс, работа с API курсов валют, история операций</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Сайт с фотографиями капибар</h2>
+            <div class="modal-images">
+                <img src="../images/project2.jpg" alt="Сайт с капибарами" onerror="this.style.display='none'">
+            </div>
+            <div class="modal-description">
+                <p><strong>Полное описание:</strong> Веселый сайт с коллекцией фотографий капибар и одним забавным видео.</p>
+                <p><strong>Технологии:</strong> JavaScript, HTML, CSS</p>
+                <p><strong>Особенности:</strong> Галерея изображений, встроенное видео, адаптивный дизайн</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/twensevts/myproject" class="btn-primary" target="_blank">
+                    <i class="fab fa-github"></i>
+                    Открыть репозиторий
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Интернет-магазин</h2>
+            <div class="modal-images">
+                <img src="../images/project3.jpg" alt="Интернет-магазин" onerror="this.style.display='none'">
+            </div>
+            <div class="modal-description">
+                <p><strong>Полное описание:</strong> Полнофункциональный интернет-магазин с системой корзины и оформлением заказов.</p>
+                <p><strong>Технологии:</strong> JavaScript, Bootstrap, LocalStorage</p>
+                <p><strong>Особенности:</strong> Корзина покупок, фильтрация товаров, адаптивный дизайн</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://github.com/twensevts/frontend-and-backend-practice" class="btn-primary" target="_blank">
+                    <i class="fab fa-github"></i>
+                    Открыть репозиторий
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Портфолио (в процессе)</h2>
+            <div class="modal-images">
+                <img src="../images/project4.jpg" alt="Портфолио" onerror="this.style.display='none'">
+            </div>
+            <div class="modal-description">
+                <p><strong>Полное описание:</strong> Современное портфолио с адаптивным дизайном и интуитивной навигацией.</p>
+                <p><strong>Технологии:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Особенности:</strong> Адаптивная верстка, фильтрация проектов, модальные окна</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Контакты</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/filters.js"></script>
+    <script src="../scripts/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Главная</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>Екатерина</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="pages/projects.html" class="nav-link">Проекты</a>
+                <a href="pages/diary.html" class="nav-link">Дневник</a>
+                <a href="pages/contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="student-photo">
+                        <img src="images/photo.jpg" alt="Фото студента">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1>Привет! Я студентка Екатерина</h1>
+                    <p class="hero-subtitle">Институт ИПТИП, группа ЭФБО-04-24</p>
+                    <p class="hero-description">Увлекаюсь веб-разработкой</p>
+                    <a href="assets/resume.pdf" download="Резюме_Екатерина.pdf" class="btn-primary">
+                        <i class="fas fa-download"></i>
+                        Скачать резюме
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Bootstrap</span>
+                        <span class="skill-percent">45%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 45%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-preview">
+        <div class="container">
+            <h2 class="section-title">Лучшие проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Базы данных криптовалют">
+                    </div>
+                    <div class="project-number">Проект 1</div>
+                    <h3>Базы данных криптовалют</h3>
+                    <p>Проект разработан по дисциплине базы данных на Python.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="ПростоСайт">
+                    </div>
+                    <div class="project-number">Проект 2</div>
+                    <h3>ПростоСайт</h3>
+                    <p>Лучший сайт с фотографиями капибар! Даже есть видео.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Сайт - портфолио">
+                    </div>
+                    <div class="project-number">Проект 3</div>
+                    <h3>Сайт - портфолио</h3>
+                    <p>Сайт обо мне с новостями, товарами, достижениями и другой сборной солянкой</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Контакты</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
